@@ -222,6 +222,33 @@
     .email-display a { color: #2d6a9f; text-decoration: none; }
     .email-display a:hover { text-decoration: underline; }
 
+    /* ── Video reference ── */
+    .video-section { padding: 28px 30px 24px; }
+    .video-section h2 {
+      font-size: 1.15rem;
+      color: #1a3a5c;
+      margin-bottom: 12px;
+      border-left: 4px solid #2d6a9f;
+      padding-left: 10px;
+    }
+    .video-section p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 16px;
+      line-height: 1.55;
+    }
+    .video-wrap {
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #000;
+    }
+    .video-wrap video {
+      width: 100%;
+      display: block;
+      max-height: 480px;
+    }
+
     /* ── Reference box ── */
     .reference-box {
       background: #f6f9fc;
@@ -306,7 +333,7 @@
             </tr>
             <tr>
               <td>Resolución</td>
-              <td>2 MP (ajustable)</td>
+              <td>2 MP o más (ajustable)</td>
             </tr>
             <tr>
               <td>Velocidad de cuadros</td>
@@ -386,6 +413,20 @@
       </div>
     </div>
 
+    <!-- Video reference card (full width) -->
+    <div class="card card-full">
+      <div class="video-section">
+        <h2>🎥 Video de referencia del producto</h2>
+        <p>El siguiente video muestra el tipo de cámara web industrial que se está buscando, como referencia para los proveedores.</p>
+        <div class="video-wrap">
+          <video controls>
+            <source src="camara-referencia.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de video.
+          </video>
+        </div>
+      </div>
+    </div>
+
     <!-- Contact card (full width) -->
     <div class="card card-full">
       <div class="contact-section">
@@ -393,7 +434,7 @@
         <p>
           Si sos proveedor y tenés disponible una cámara con características iguales o similares
           a las indicadas arriba — <strong>cámara web industrial USB, lente varifocal mecánico,
-          2 MP ajustable, 100/60/30 fps, operación 24/7, IP54, temperatura 2–48 °C, plug &amp; play,
+          2 MP o más ajustable, 100/60/30 fps, operación 24/7, IP54, temperatura 2–48 °C, plug &amp; play,
           montaje en metal, garantía &gt; 3 meses, compatible con Windows y Linux</strong> —
           completá el checklist de arriba y envianos un correo:
         </p>
@@ -438,7 +479,7 @@
       { id: 'metal',    title: '🔩 Montaje sobre metal',                      desc: 'Soporte o bracket compatible con fijación directa a superficies y estructuras metálicas de planta.' },
       { id: 'warranty', title: '📋 Garantía > 3 meses + devolución',          desc: 'Cobertura de garantía superior a 3 meses, con posibilidad de devolución si el producto no cumple las condiciones operativas acordadas.' },
       { id: 'trial',    title: '🧪 Versión de prueba / demo disponible',      desc: 'Cuenta con una unidad de prueba o programa piloto que permite evaluar el equipo en condiciones reales antes de la compra definitiva.' },
-      { id: 'res',      title: '📷 Resolución 2 MP ajustable',                desc: 'Resolución de 2 megapíxeles ajustable; compatible con velocidades de 30, 60 y/o 100 fps.' },
+      { id: 'res',      title: '📷 Resolución 2 MP o más (ajustable)',        desc: 'Resolución mínima de 2 megapíxeles o superior, ajustable; compatible con velocidades de 30, 60 y/o 100 fps.' },
       { id: 'varifocal',title: '🔭 Lente varifocal mecánico',                 desc: 'Lente varifocal con ajuste manual de foco y zoom, adecuado para visión artificial industrial.' },
       { id: 'os',       title: '💻 Compatible Windows y Linux',               desc: 'Drivers y funcionamiento validados en sistemas operativos Windows y Linux.' }
     ];
